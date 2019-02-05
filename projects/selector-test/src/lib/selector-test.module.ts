@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import {NgxsModule} from '@ngxs/store';
-import {ZooState} from './store/states/zoo.state';
 import { TestComponent } from './components/test-component/test.component';
+import {CommonModule} from '@angular/common';
+import {ZooState} from './store/states/zoo.state';
 
 @NgModule({
   declarations: [TestComponent],
   imports: [
-    NgxsModule.forFeature([
-      ZooState
-    ])
+    CommonModule,
+    NgxsModule.forFeature([ZooState])
   ],
   exports: [
     TestComponent

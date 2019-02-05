@@ -1,15 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <ul>
   <li *ngFor="let animal of animals | async">
     {{animal}}
   </li>
 </ul>
-
-<!--<ul>-->
-  <!--<li *ngFor="let animal of lala | async">-->
-    <!--{{animal}}-->
-  <!--</li>-->
-<!--</ul>-->
+<button (click)="addAnimal()">Add</button>
 
 <lib-test-component></lib-test-component>
+
+
 

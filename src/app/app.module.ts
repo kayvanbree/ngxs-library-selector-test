@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {SelectorTestModule} from 'selector-test';
 import {NgxsModule} from '@ngxs/store';
 import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
+import {ZooState} from '../../projects/selector-test/src/lib/store/states/zoo.state';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
   imports: [
     BrowserModule,
     SelectorTestModule,
-    NgxsModule.forRoot([]),
+    NgxsModule.forRoot([ZooState]),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
   providers: [],

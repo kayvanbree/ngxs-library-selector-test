@@ -1,3 +1,7 @@
-<p>
-  test-component works!
-</p>
+<ul>
+  <li *ngFor="let animal of animals | async">
+    {{animal}}
+  </li>
+</ul>
+
+<button (click)="addAnimal()">Add</button>
