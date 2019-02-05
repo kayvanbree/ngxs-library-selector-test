@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "selector-test": [
+        "dist/selector-test"
+      ],
+      "selector-test/*": [
+        "dist/selector-test/*"
+      ]
+    }
   }
 }
